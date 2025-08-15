@@ -1,0 +1,97 @@
+:root {
+  --sidebar-bg-light: #ffffff;
+  --sidebar-bg-dark: #1e1e1e;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+  --hover-bg-light: #f0f4ff;
+  --hover-bg-dark: #2a2a2a;
+  --primary-color: #1976d2;
+}
+
+.sidebarWrapper {
+  display: flex;
+}
+
+/* Drawer */
+.drawerPaper {
+  width: 240px !important;
+  background-color: var(--sidebar-bg-light);
+  color: var(--text-light);
+  transition: all 0.3s ease-in-out;
+  overflow-x: hidden;
+}
+
+body.dark-mode .drawerPaper {
+  background-color: var(--sidebar-bg-dark);
+  color: var(--text-dark);
+}
+
+/* Collapsed drawer */
+.drawerPaperCollapsed {
+  width: 70px !important;
+}
+
+.drawerCollapsed {
+  width: 70px !important;
+}
+
+.collapsedList .MuiListItemText-root {
+  display: none;
+}
+
+/* Mobile menu button */
+.menuBtn {
+  display: none !important;
+  position: fixed !important;
+  top: 10px;
+  left: 10px;
+  z-index: 1300;
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+@media (max-width: 768px) {
+  .menuBtn {
+    display: inline-flex !important;
+  }
+}
+
+/* Collapse button (desktop) */
+.topSection {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.collapseBtn {
+  background-color: transparent !important;
+  color: inherit !important;
+}
+
+/* Menu items */
+.menuItem {
+  border-radius: 40em;
+  margin: 8px 12px;
+  padding: 12px 16px !important;
+  transition: all 0.25s ease-in-out;
+}
+
+.menuItem:hover {
+  background-color: var(--hover-bg-light);
+  transform: scale(1.05);
+  box-shadow: #adcfff 0 -4px 6px inset;
+}
+
+body.dark-mode .menuItem:hover {
+  background-color: var(--hover-bg-dark);
+}
+
+.icon {
+  min-width: 40px;
+  color: inherit;
+}
+
+.text {
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}

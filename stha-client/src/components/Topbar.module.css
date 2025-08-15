@@ -1,0 +1,54 @@
+.topbar {
+  background-color: var(--sidebar-bg-light) !important;
+  color: var(--text-light) !important;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08) !important;
+}
+
+body.dark-mode .topbar {
+  background-color: var(--sidebar-bg-dark) !important;
+  color: var(--text-dark) !important;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+}
+
+.title {
+  font-weight: bold !important;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.username {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.avatar {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+.iconBtn {
+  color: inherit !important;
+}
