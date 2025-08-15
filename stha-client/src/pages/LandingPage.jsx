@@ -1,5 +1,6 @@
 import { Box, Button, Typography, Container } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import styles from "./LandingPage.module.css";
 
 export default function LandingPage() {
   const navigate = useNavigate();
@@ -25,7 +26,9 @@ export default function LandingPage() {
           color: "#fff",
         }}
       >
+        
         <Typography variant="h5" fontWeight="bold">
+          <img className={styles.Logo} src="../../../holiday-trip.png"/>
           Smart Travel Help Agent
         </Typography>
         <Box>

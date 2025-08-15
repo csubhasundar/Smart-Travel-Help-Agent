@@ -1,0 +1,149 @@
+:root {
+  --sidebar-bg-light: #ffffff;
+  --sidebar-bg-dark: #1e1e1e;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+  --hover-bg-light: #f0f4ff;
+  --hover-bg-dark: #2a2a2a;
+}
+
+/* Logo Section */
+.logoSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-left: 100px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+}
+
+/* Light Mode Body */
+body {
+  background-color: var(--sidebar-bg-light);
+  color: var(--text-light);
+}
+
+/* Layout Wrapper */
+.layoutWrapper {
+  display: flex;
+}
+
+/* Sidebar */
+.drawerPaper {
+  width: 240px !important;
+  background-color: var(--sidebar-bg-light);
+  color: var(--text-light);
+  transition: width 0.3s ease-in-out;
+}
+
+.drawerPaperCollapsed {
+  width: 70px !important;
+}
+
+.collapsedList .MuiListItemText-root {
+  display: none;
+}
+
+.topSection {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.icon {
+  min-width: 40px;
+  color: inherit;
+}
+
+.text {
+  font-weight: 600;
+}
+
+/* Topbar */
+.topbar {
+  background-color: var(--sidebar-bg-light);
+  color: var(--text-light);
+  transition: all 0.3s ease-in-out;
+}
+
+.topbarActions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+}
+
+/* Main Content */
+.mainContent {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Sidebar Menu Buttons (Stylish) - Light Mode */
+.menuItem {
+  border-radius: 40em; /* pill shape */
+  margin: 8px 12px;
+  padding: 0.6rem 1rem;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  background-color: #ffffff;
+  color: #000000;
+  transition: all 0.2s ease-in-out;
+}
+
+.menuItem:hover {
+  background-color: #FFC229;
+  box-shadow: #2d81ff 0 -6px 8px inset;
+  transform: scale(1.05);
+}
+
+.menuItem:active {
+  transform: scale(1.02);
+}
+
+/* Icon inside the button */
+.menuItem .MuiListItemIcon-root {
+  color: inherit;
+  min-width: 40px;
+}
+
+/* ========================= DARK MODE STYLES (placed after light mode) ========================= */
+
+/* Dark Mode Body */
+body.dark-mode {
+  background-color: #121212;
+  color: var(--text-dark);
+}
+
+body.dark-mode .drawerPaper {
+  background-color: var(--sidebar-bg-dark);
+  color: var(--text-dark);
+}
+
+body.dark-mode .topbar {
+  background-color: var(--sidebar-bg-dark);
+  color: var(--text-dark);
+}
+
+/* Dark Mode Sidebar Menu Buttons */
+body.dark-mode .menuItem {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  box-shadow: #444 0 -8px 6px inset;
+}
+
+/* FULL background color on hover in dark mode */
+body.dark-mode .menuItem:hover {
+  background-color: #FFC229; 
+  color: #000000;
+  box-shadow: none; 
+  transform: scale(1.05);
+}

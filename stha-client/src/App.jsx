@@ -11,6 +11,7 @@ import MapView from "./components/MapView";
 import CostAnalysis from "./components/CostAnalysis";
 import FriendShare from "./components/FriendShare";
 import FriendLocation from "./components/FriendLocation";
+import TravelNewsFeed from "./components/TravelNewsFeed";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
         <Route path="/dashboard" element={<DashboardPage />}>
           <Route index element={<div>Welcome to the Dashboard!</div>} />
           <Route path="plan-journey" element={<PlanJourney />} />
+          <Route path="travel-news" element={<TravelNewsFeed />} />
           <Route path="discover-nearby" element={<DiscoverNearby />} />
           <Route path="weather-safety" element={<WeatherSafety />} />
           <Route path="map-view" element={<MapView />} />
